@@ -1,4 +1,3 @@
-// src/features/insurance/navigation/InsuranceNavigator.tsx
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { InsuranceValidationScreen } from '../screens/InsuranceValidationScreen';
 import { InsuranceSelectionScreen } from '../screens/InsuranceSelectionScreen';
@@ -14,7 +13,7 @@ export type InsuranceStackParamList = {
 const Stack = createNativeStackNavigator<InsuranceStackParamList>();
 
 export const InsuranceNavigator = () => (
-  <Stack.Navigator>
+  <Stack.Navigator screenOptions={{ headerShown: false }}>
     <Stack.Screen name="InsuranceValidation" component={InsuranceValidationScreen} />
     <Stack.Screen name="InsuranceSelection" component={InsuranceSelectionScreen} />
     <Stack.Screen name="InsuranceSummary" component={InsuranceSummaryScreen} />

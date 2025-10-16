@@ -1,4 +1,3 @@
-// src/app/navigation/AppNavigator.tsx
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { InsuranceNavigator } from '../../features/insurance/navigation/InsuranceNavigator';
